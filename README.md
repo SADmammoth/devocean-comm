@@ -1,4 +1,4 @@
-# diplo-comm
+# devocean-comm
 
 a [Sails v1](https://sailsjs.com) application
 
