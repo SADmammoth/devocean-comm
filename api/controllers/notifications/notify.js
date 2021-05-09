@@ -11,5 +11,9 @@ module.exports = {
     sails.sockets.broadcast('notifications', 'notifications', {
       message: 'Notifications updated',
     });
+
+    this.res.json({
+      message: 'Successfully notified about notifications',
+    });
   },
 };

@@ -1,7 +1,7 @@
 module.exports = {
-  friendlyName: 'Tasks',
+  friendlyName: 'Discussions',
 
-  description: 'Subscribe to tasks.',
+  description: 'Subscribe to discussions.',
 
   inputs: {},
 
@@ -16,9 +16,9 @@ module.exports = {
       throw 'badRequest';
     }
 
-    sails.sockets.join(this.req, 'notifications', (err) => {
+    sails.sockets.join(this.req, 'discussions', (err) => {
       this.res.json({
-        message: 'Successfully subscribed to notifications',
+        message: 'Successfully subscribed to discussions',
       });
     });
   },

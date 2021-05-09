@@ -16,9 +16,9 @@ module.exports = {
       throw 'badRequest';
     }
 
-    sails.sockets.join(this.req, 'notifications', (err) => {
+    sails.sockets.join(this.req, 'tasks', (err) => {
       this.res.json({
-        message: 'Successfully subscribed to notifications',
+        message: 'Successfully subscribed to tasks',
       });
     });
   },

@@ -26,6 +26,65 @@ module.exports.routes = {
     action: 'notifications/subscribe',
   },
 
+  'get /tasks/subscribe': {
+    action: 'tasks/subscribe',
+  },
+
+  'get /tasks/notify': {
+    action: 'tasks/notify',
+  },
+
+  'get /teammates/subscribe': {
+    action: 'teammates/subscribe',
+  },
+
+  'get /teammates/notify': {
+    action: 'teammates/notify',
+  },
+
+  'get /discussions/subscribe': {
+    action: 'comments/discussions/subscribe',
+  },
+
+  'get /discussions/notify': {
+    action: 'comments/discussions/notify',
+  },
+
+  
+  'get /reports/notify': {
+    action: 'comments/reports/notify',
+  },
+  
+  'get /reports/subscribe': {
+    action: 'comments/reports/subscribe',
+  },
+  
+  'get /history/notify': {
+    action: 'comments/history/notify',
+  },
+  
+  'get /history/subscribe': {
+    action: 'comments/history/subscribe',
+  },
+
+  'get /statuses/notify': {
+    action: 'comments/statuses/notify',
+  },
+  
+  'get /statuses/subscribe': {
+    action: 'comments/statuses/subscribe',
+  },
+
+  
+  'get /taskcollections/notify': {
+    action: 'taskcollections/notify',
+  },
+  
+  'get /taskcollections/subscribe': {
+    action: 'taskcollections/subscribe',
+  },
+
+
   /***************************************************************************
    *                                                                          *
    * More custom routes here...                                               *
