@@ -18,6 +18,10 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
+  'get /': (req, res) => {
+    return res.send('Service is up and running');
+  },
+
   'get /notifications/notify': {
     action: 'notifications/notify',
   },
@@ -50,19 +54,18 @@ module.exports.routes = {
     action: 'comments/discussions/notify',
   },
 
-  
   'get /reports/notify': {
     action: 'comments/reports/notify',
   },
-  
+
   'get /reports/subscribe': {
     action: 'comments/reports/subscribe',
   },
-  
+
   'get /history/notify': {
     action: 'comments/history/notify',
   },
-  
+
   'get /history/subscribe': {
     action: 'comments/history/subscribe',
   },
@@ -70,20 +73,18 @@ module.exports.routes = {
   'get /statuses/notify': {
     action: 'comments/statuses/notify',
   },
-  
+
   'get /statuses/subscribe': {
     action: 'comments/statuses/subscribe',
   },
 
-  
   'get /taskcollections/notify': {
     action: 'taskcollections/notify',
   },
-  
+
   'get /taskcollections/subscribe': {
     action: 'taskcollections/subscribe',
   },
-
 
   /***************************************************************************
    *                                                                          *
