@@ -136,7 +136,7 @@ module.exports = {
       allRoutes: true,
       allowOrigins: [
         'https://devocean-back.herokuapp.com',
-        'https://devocean-front.herokuapp.com',
+        'https://devocean-client.herokuapp.com',
         'https://devocean-users.herokuapp.com',
       ],
       allowRequestHeaders: 'Content-Type, Authorization',
@@ -231,7 +231,7 @@ module.exports = {
      ***************************************************************************/
     onlyAllowOrigins: [
       'https://devocean-back.herokuapp.com',
-      'https://devocean-front.herokuapp.com',
+      'https://devocean-client.herokuapp.com',
       'https://devocean-users.herokuapp.com',
     ],
 
